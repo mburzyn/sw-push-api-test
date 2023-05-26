@@ -1,0 +1,30 @@
+# See https://www.atlassian.com/git/tutorials/saving-changes/gitignore for more about ignoring files.
+
+# dependencies
+/node_modules
+/bootstrap/node_modules
+
+# testing
+/coverage
+/reports
+
+# production
+/storybook-static
+/build
+/bootstrap/build
+
+# Style Guide
+/styleguide
+/.scannerwork
+
+# misc
+.DS_Store
+
+npm-debug.log*
+tmp
+
+# editor
+.idea
+.vscode
+
+*.iml

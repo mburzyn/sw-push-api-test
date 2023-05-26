@@ -1,0 +1,42 @@
+// https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    /* Type-Checking Options */
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    /* Modules Options */
+    "module": "CommonJS",
+    "moduleResolution": "node16",
+
+    /* Emit Options */
+    "noEmit": true,
+    "sourceMap": true,
+
+    /* JavaScript Support Options */
+    "allowJs": true,
+    "checkJs": true,
+
+    /* Interop Constraints Options */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Language & Env Options */
+    "jsx": "react",
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+
+    /* JSON files */
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
