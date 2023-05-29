@@ -1,7 +1,8 @@
 {
   "name": "noti",
   "version": "0.0.1",
-  "description": "",
+  "description": "app poc",
+  "homepage": ".",
   "scripts": {
     "serve": "webpack serve --mode development",
     "start": "http-server build",
