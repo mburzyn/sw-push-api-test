@@ -16,8 +16,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-console.log(Notification);
-
 const container = document.getElementById('root') as HTMLElement;
 
 const root = createRoot(container);
