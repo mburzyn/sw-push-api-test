@@ -10,24 +10,6 @@ function checkNotificationPromise() {
   return true;
 }
 
-export function urlBase64ToUint8Array(base64String: string) {
-  const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
-
-  console.log(padding);
-  const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
-
-  const rawData = window.atob(base64);
-  const outputArray = new Uint8Array(rawData.length);
-
-  for (let i = 0; i < rawData.length; i = +1) {
-    outputArray[i] = rawData.charCodeAt(i);
-  }
-  return outputArray;
-}
-
-export const convertDataURIToBinary = (dataURI: string) =>
-  Uint8Array.from(window.atob(dataURI.replace(/^data[^,]+,/, '')), v => v.charCodeAt(0));
-
 // Public Key:
 const VAPID_PUBLIC_KEY =
   'BPE1JZX6eHpS4FMSKirUCSQk4Ovk9Ff0moY3M5c9JrekMLVrEwxo6_aUKS8fjWPcgMg52o_rerx5BDehFnFhCI8';

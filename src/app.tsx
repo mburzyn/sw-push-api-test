@@ -7,17 +7,14 @@ import {
 
 export const App: React.FC = () => {
   function sendNotification() {
-    const text = 'Take a look at this brand new t-shirt!';
-    const title = 'New Product Available';
+    const title = 'ze title';
     const options = {
-      body: text,
-      vibrate: [200, 100, 200],
+      body: 'notification body text',
       tag: 'new-product',
       actions: [
         {
-          action: 'Detail',
-          title: 'View',
-          icon: 'https://via.placeholder.com/128/ff0000',
+          action: 'action1',
+          title: 'Action 1',
         },
       ],
     };

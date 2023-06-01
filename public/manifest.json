@@ -454,6 +454,5 @@
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#27ae60",
-  "background_color": "#fff",
-  "gcm_sender_id": "application"
+  "background_color": "#fff"
 }
